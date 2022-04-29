@@ -27,4 +27,8 @@ public interface ReleveBancaireController {
   @DeleteMapping("/relevebancaire/{releveBancaireId}")
   ResponseEntity<Void> deleteReleveBancaireById(@PathVariable Long releveBancaireId);
 
+  @PostMapping("/relevebancaire/qualification/{relevebancaireId}")
+  ResponseEntity<ReleveBancaireEntity> qualificationrelevebancaire(@PathVariable String relevebancaireId);
+
+
 }

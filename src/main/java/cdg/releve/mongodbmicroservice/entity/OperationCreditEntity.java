@@ -12,12 +12,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-@Document(collection = "OPERATIONCREDIT")
+@Document(collection = "operation_credit")
 public class OperationCreditEntity {
 
 
     @Id
-    private Long operationCreditId;
+    private String id;
     private Date operationDate;
     private LigneReleveEntity ligneReleve;
 
