@@ -1,0 +1,28 @@
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/eureka
+logging:
+    level:
+        org:
+            springframework:
+                data:
+                    mongodb:
+                        core:
+                            MongoTemplate: DEBUG
+server:
+    port: 8082
+    servlet:
+        context-path: /api/v2
+spring:
+    application:
+        name: mongodb-microservice
+    cloud:
+        config:
+            enabled: false
+    data:
+        mongodb:
+            auto-index-creation: true
+            database: Releve-Bancaire-CDG
+            host: localhost
+            port: 27017
